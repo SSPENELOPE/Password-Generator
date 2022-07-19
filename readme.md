@@ -5,7 +5,7 @@
 
 - I made this tool using a base of code givin to me by the UofM coding bootcamp. This is part of my requirment to obtain my certification as a developer
 
-- This tool can be used for future things including new social media profiles or work login credentials.
+- This tool can be used for all things requiring a password that includes but is not limited to, new social media profiles or work login credentials.
 
 # Installation
 - There are no installation requirements for this tool

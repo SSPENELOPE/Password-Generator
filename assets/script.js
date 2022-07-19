@@ -13,17 +13,29 @@ var characters = {
 // Write password to the #password input
 function writePassword() {
 
+
+
+  var password = generatePassword();
+  // Print the text to the #password textarea
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+};
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+function generatePassword() {
   // This is the character pool we will be creating
   var passwordCharacters = "";
 
   // Determine password length
   var passwordLength = prompt("Choose a password length between 8 and 128");
-  if (passwordLength) {
+  if (passwordLength < 8  || passwordLength > 128) {
     // If no password length is chosen we return the page
-  } else {
-    return;
-  }
-
+      return;
+  } 
   // Confirm if we want lowercase letters
   var lowercase = confirm("Would you like to use lowercase letters?");
   if (lowercase) {
@@ -55,26 +67,12 @@ function writePassword() {
 
   // Create the password
   var password = "";
-  for (var i = 0; i <= passwordLength - 1; i++) {
+  for (var i = 0; i < passwordLength;  i++) {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
-  }
+  };
 
-  // Print the text to the #password textarea
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  return password;
+};
 
 
-
-/*var password = generatePassword(); {
-  password = "";
-  for (var i = 0; i <= passwordLength; i++) {
-    password = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
-  }
-};*/
 

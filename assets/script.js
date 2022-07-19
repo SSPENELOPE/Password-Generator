@@ -23,7 +23,7 @@ function writePassword() {
   } else {
     return;
   }
-  
+
   // Confirm if we want lowercase letters
   var lowercase = confirm("Would you like to use lowercase letters?");
   if (lowercase) {
@@ -32,7 +32,7 @@ function writePassword() {
   };
 
   // Confirm if we want uppercase letters
-  var uppercase = confirm("would you like to use uppercase letters?");
+  var uppercase = confirm("Would you like to use uppercase letters?");
   if (uppercase) {
     // If yes, add them to the character pool
     passwordCharacters += characters.uppercase;
@@ -47,7 +47,7 @@ function writePassword() {
 
 
   // Confirm if we want symbols
-  var symbols = confirm("Would you like to add symbols?");
+  var symbols = confirm("Would you like to use symbols?");
   if (symbols) {
     // If yes, add them to the character pool
     passwordCharacters += characters.symbols;

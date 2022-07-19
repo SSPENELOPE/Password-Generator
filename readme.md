@@ -11,9 +11,13 @@
 - There are no installation requirements for this tool
 
 # Usage
-- Click the generate password button, the generator will generate a password using all the modern requirements for a secure password. Either write it down or copy and paste it somewhere secure that you have access to so you don't forget it. 
+- Click the generate password button, the generator will ask you if you want to use all of the modern requirments for a strong password, you are able to choose what variables you would like in your password. Once you are done with your selections the password will be displayed on the screen. 
 
+- It is recommended that you either write it down or copy and save it to a secure location so you do not forget it.
 
+![alt text](./assets/images/Password%20Generator.png)
+
+- You can use and view this password generator at (https://sspenelope.github.io/Password-Generator/)
 
 
 

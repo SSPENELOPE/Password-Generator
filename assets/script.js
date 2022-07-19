@@ -11,7 +11,7 @@ var characters = {
 // Write password to the #password input
 function writePassword() {
   var passwordCharacters = "";
-  var passwordLength = prompt("Choose a password lenght between 8 and 128");
+  var passwordLength = prompt("Choose a password length between 8 and 128");
   if (passwordLength) {
   } else {
     return;
@@ -39,7 +39,7 @@ function writePassword() {
 
 
   var password = "";
-  for (var i = 0; i <= passwordLength; i++) {
+  for (var i = 0; i <= passwordLength-1; i++) {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
   }
 

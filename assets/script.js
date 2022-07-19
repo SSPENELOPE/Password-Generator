@@ -19,10 +19,11 @@ function writePassword() {
   // Determine password length
   var passwordLength = prompt("Choose a password length between 8 and 128");
   if (passwordLength) {
+    // If no password length is chosen we return the page
   } else {
     return;
   }
-
+  
   // Confirm if we want lowercase letters
   var lowercase = confirm("Would you like to use lowercase letters?");
   if (lowercase) {

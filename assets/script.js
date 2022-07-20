@@ -29,7 +29,7 @@ function generatePassword() {
   var passwordCharacters = "";
 
   // Determine password length
-  var passwordLength = prompt("Choose a password length between 8 and 128");
+  var passwordLength = prompt("Choose a password length between 8 and 128 characters!");
   if (passwordLength < 8 || passwordLength > 128) {
     // If incorrect password length is chosen we return undefined and cancel the function
     return;

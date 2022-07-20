@@ -70,7 +70,7 @@ function generatePassword() {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
   };
 
-  // Print the password
+  // return the password to the password variable
   return password;
 };
 

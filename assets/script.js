@@ -35,7 +35,8 @@ function generatePassword() {
   if (passwordLength < 8  || passwordLength > 128) {
     // If no password length is chosen we return the page
       return;
-  } 
+  };
+
   // Confirm if we want lowercase letters
   var lowercase = confirm("Would you like to use lowercase letters?");
   if (lowercase) {

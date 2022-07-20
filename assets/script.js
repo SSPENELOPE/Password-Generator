@@ -13,8 +13,6 @@ var characters = {
 // Write password to the #password input
 function writePassword() {
 
-
-
   var password = generatePassword();
   // Print the text to the #password textarea
   var passwordText = document.querySelector("#password");
@@ -32,9 +30,9 @@ function generatePassword() {
 
   // Determine password length
   var passwordLength = prompt("Choose a password length between 8 and 128");
-  if (passwordLength < 8  || passwordLength > 128) {
-    // If no password length is chosen we return the page
-      return;
+  if (passwordLength < 8 || passwordLength > 128) {
+    // If incorrect password length is chosen we return undefined and cancel the function
+    return;
   };
 
   // Confirm if we want lowercase letters
@@ -68,10 +66,11 @@ function generatePassword() {
 
   // Create the password
   var password = "";
-  for (var i = 0; i < passwordLength;  i++) {
+  for (var i = 0; i < passwordLength; i++) {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
   };
 
+  // Print the password
   return password;
 };
 
